@@ -1,0 +1,33 @@
+html(lang='en')
+    // 
+      Made by Alec Ortega
+      
+      Copyright (c) 2015 Alec Ortega
+      Licensed under the MIT license.
+      
+      Author's Website:
+      www.alecortega.com
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0')
+
+    link(rel='stylesheet' href='stylesheets/app.css' type='text/css')
+
+    include shared/meta-tags
+    include shared/app-icons
+
+  body
+    include sections/hero
+    include sections/navigation
+    include sections/about
+    include sections/developer
+    include sections/designer
+    include sections/resume
+    include sections/portfolio
+    include sections/contact
+    include sections/footer
+
+    include shared/analytics
+
+    script(src="javascripts/bundle.js" type="text/javascript")
+    script(src='javascripts/app.js' type="text/javascript")

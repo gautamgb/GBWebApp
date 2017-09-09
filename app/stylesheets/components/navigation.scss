@@ -1,0 +1,240 @@
+nav {
+  padding: 10px 0;
+
+  @include breakpoint($small-breakpoint) {
+    min-width: $min-width;
+  }
+
+  &.navbar-hero {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+
+    a {
+      color: #FFF;
+
+      &:hover {
+        color: #B1C6CC;
+      }
+    }
+  }
+
+  &.navbar-main {
+    background-color: #FFF;
+    border-bottom: 1px solid $border-color;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    transition: $short-transition;
+
+    .navbar-name {
+      color: $background-dark-blue;
+    }
+
+    a {
+      color: $text-light;
+
+      &:hover {
+        color: $background-dark-blue;
+      }
+    }
+  }
+}
+
+.navbar-container {
+  margin: 0 auto;
+  width: 100%;
+
+  @include breakpoint($small-breakpoint) {
+    width: 90%;
+  }
+}
+
+.navbar-hamburger {
+  float: right;
+  height: 16px;
+  margin: 17px 25px;
+  width: 22px;
+
+  &.active {
+    .line-1 {
+      transform: translateY(-0.5px) translateX(0) rotate(45deg);
+    }
+    .line-2 {
+      opacity:0;
+    }
+    .line-3 {
+      transform: translateY(0.5px) translateX(0) rotate(-45deg);
+    }
+  }
+
+  .line {
+    background-color: $text-light;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    margin: 0;
+    position: absolute;
+    transition: $short-transition;
+    width: 22px;
+
+    &.line-1 {
+      top: 0;
+      transform-origin: top left;
+    }
+
+    &.line-2 {
+      margin-top: -1px;
+      top: 50%;
+    }
+
+    &.line-3 {
+      bottom: 0;
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.navbar-links {
+  float: right;
+  height: 50px;
+  padding: 0 10px;
+
+  a {
+    font-size: 13px;
+    font-weight: $weight-regular;
+    letter-spacing: 1.5px;
+
+    &:after {
+      background-color: $background-dark-blue;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: -5px;
+      opacity: 0;
+      position: absolute;
+      right: -5px;
+      transition: $short-transition;
+    }
+  }
+
+  li {
+    display: inline-block;
+    padding: 10px 15px;
+  }
+
+  .highlight {
+    color: $background-dark-blue;
+
+    &:after {
+      bottom: -10px;
+      opacity: 1;
+    }
+  }
+}
+
+.navbar-mobile-backdrop {
+  background-color: #FFF;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.navbar-mobile {
+  @extend .navbar-links;
+  bottom: 0;
+  height: 240px;
+  left:0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 50px;
+
+  a {
+    font-size: 20px;
+  }
+
+  li {
+    display: block;
+    padding: 25px 15px;
+    text-align: center;
+  }
+}
+
+.navbar-name {
+  float: left;
+  font-size: 20px;
+  font-weight: $weight-important;
+  height: 50px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin-left: 15px;
+  padding-left: 50px;
+  -webkit-font-smoothing: antialiased;
+
+  @include breakpoint($small-breakpoint) {
+    margin-left: 0;
+  }
+}
+
+.nav-trigger {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: -100px;
+  transition: 0.4s;
+  z-index: 1000;
+}
+
+// Needed for transition after scrolling past "About"
+.nav-trigger-in {
+  top: 0;
+}
+
+.logo-container {
+  position: absolute;
+  height: 41px;
+  width: 43px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.gear-navigation-large {
+  animation: rotation-right 15s linear infinite;
+  background-size: cover;
+  height: 27px;
+  width: 27px;
+  left: 0;
+  bottom: 2px;
+  position: absolute;
+
+  &.dark {
+    background-image: url('../images/gear-dark-large.svg');
+  }
+
+  &.light {
+    background-image: url('../images/gear-white-large.svg');
+  }
+}
+
+.gear-navigation-small {
+  animation: rotation-left 11.25s linear infinite;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  right: 0;
+  position: absolute;
+  top: 0;
+
+  &.dark {
+    background-image: url('../images/gear-dark-small.svg');
+  }
+
+  &.light {
+    background-image: url('../images/gear-white-small.svg');
+  }
+}

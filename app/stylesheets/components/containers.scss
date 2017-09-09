@@ -1,0 +1,155 @@
+// Defines style for all section headers
+// ----------------------------------------------------------------------
+.section-header-container {
+  border-bottom: 1px solid rgba(255,255,255,0.075);
+  margin: 0 auto;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  z-index: 200;
+
+  @include breakpoint($small-breakpoint) {
+    width: 95%;
+  }
+
+  p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: $line-height;
+    margin: 0 auto 30px;
+    max-width: 600px;
+  }
+}
+
+// Defines style for every section container
+// ----------------------------------------------------------------------
+.section-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  z-index: 200;
+  text-align: left;
+
+  li {
+    color: $text-light;
+    margin-bottom: 18px;
+  }
+
+  .spacer {
+    margin-top: 50px;
+
+    @include breakpoint($small-breakpoint) {
+      margin-top: 125px;
+    }
+  }
+
+  .spacer-medium-down {
+    margin-top: 50px;
+
+    @include breakpoint($small-breakpoint) {
+      margin-top: 0;
+    }
+  }
+}
+
+.column {
+  @include breakpoint($small-breakpoint) {
+    margin-top: 75px;
+  }
+}
+
+.center-column {
+  padding: 0;
+}
+
+// Defines style for recommendation triggers and elements
+// ----------------------------------------------------------------------
+.recommendation-trigger {
+  height: 750px;
+  position: relative;
+
+  @include breakpoint($small-breakpoint) {
+    height: 50%;
+  }
+  &.right {
+    margin-top: 18%;
+  }
+}
+
+.recommendation {
+  background: #FFF;
+  border: solid 1px #E9EAEC;
+  height: 330px;
+  padding: 15px;
+  width: 100%;
+
+  &.left {
+    border-radius: 0 5px 5px 0;
+    left: 0;
+  }
+
+  &.right {
+    border-radius: 5px 0 0 5px;
+    right: 0;
+  }
+
+  blockquote {
+    color: $text-light;
+    clear: both;
+    height: 200px;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+
+  img {
+    border: solid 1px $border-color;
+    border-radius: 50%;
+    float: left;
+    height: 70px;
+    margin: 10px 15px 15px 10px;
+    width: 70px;
+  }
+
+  h3 {
+    color: #000;
+    margin: 0;
+  }
+
+  h4 {
+    color: $background-light-blue;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+  }
+
+  .readmore {
+    color: $background-light-blue;
+    font-weight: $weight-regular;
+    position: static;
+  }
+
+  .title {
+    color: $background-dark-blue;
+  }
+}
+
+.resume-column {
+  bottom: 50px;
+  height: 75%;
+  position: absolute;
+  width: 27%;
+  z-index: 300;
+
+  @include breakpoint ($medium-breakpoint) {
+    height: 80%;
+  }
+
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+}
