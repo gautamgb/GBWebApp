@@ -35,21 +35,12 @@
       width: 100%;
 
       &.one {
-        background: url('../images/masschallenge.jpg') center;
+        background: url('../images/GBCareer.jpg') center;
         background-size: cover;
       }
 
       &.two {
-        background: url('../images/resilienthour.jpg') right;
-        background-size: cover;
-      }
-
-      &.three {
-        background: url('../images/massawards.jpg') center;
-        background-size: cover;
-      }
-      &.four {
-        background: url('../images/hourofcode.jpg') center 30%;
+        background: url('../images/GBProfileSeattle.jpg') center;
         background-size: cover;
       }
     }
