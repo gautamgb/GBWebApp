@@ -3869,17 +3869,6 @@ webpackJsonp([0, 1], [function(e, t, n) {
           }).setPin("#resume-element").addTo(v)
         })
       },
-      w = function() {
-        new s["default"].Scene({
-          duration: l["default"].getRecommendationDuration,
-          triggerElement: ".recommendation-trigger.left",
-          offset: -p - 50
-        }).setPin(".recommendation.left").addTo(v), new s["default"].Scene({
-          duration: l["default"].getRecommendationDuration,
-          triggerElement: ".recommendation-trigger.right",
-          offset: -p - 50
-        }).setPin(".recommendation.right").addTo(v)
-      },
       x = function() {
         h.css("bottom", g.height() - h.height() / 2.6)
       },
@@ -3890,7 +3879,7 @@ webpackJsonp([0, 1], [function(e, t, n) {
         r(window).on("resize", T), r(window).on("load", x)
       },
       E = function() {
-        C(), y(), b(), w()
+        C(), y(), b()
       };
     t["default"] = E, e.exports = t["default"]
   }).call(t, n(4))
