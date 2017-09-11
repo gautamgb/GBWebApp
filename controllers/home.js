@@ -4,7 +4,7 @@ var mailgun =      require('nodemailer-mailgun-transport');
 var auth = {
     auth: {
       api_key: process.env.MAILGUN_KEY,
-      domain: 'alecortega.com'
+      domain: 'seekgb.com'
     }
   };
 
@@ -29,10 +29,10 @@ exports.postHome = function(req, res) {
   var body = req.body.message;
 
   var mailOptions = {
-    to: 'aleccortega@gmail.com',
+    to: 'gautamgb@gmail.com',
     from: sender,
-    bcc: 'aleccortega@gmail.com',
-    subject: 'Contact Form | Personal Website',
+    bcc: 'gautamgb@gmail.com',
+    subject: 'Contact Form | GB Personal Website',
     html: name + '<br><br>' + body
   };
 

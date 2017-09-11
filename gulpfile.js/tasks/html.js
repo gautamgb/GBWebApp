@@ -13,7 +13,7 @@ var fs           = require('fs')
 var exclude = path.normalize('!**/{' + config.tasks.html.excludeFolders.join(',') + '}/**')
 
 var paths = {
-  src: [path.join(config.root.src, config.tasks.html.src, '/index.jade')],
+  src: [path.join(config.root.src, config.tasks.html.src],
   dest: path.join(config.root.dest, config.tasks.html.dest),
 }
 

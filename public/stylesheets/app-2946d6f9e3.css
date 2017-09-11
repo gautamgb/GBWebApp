@@ -10042,35 +10042,35 @@ form textarea {
     padding: 60px 50px 0
   }
   #browser-developer-trigger {
-    height: 1000px
+    height: 700px
   }
   #browser-designer-trigger {
-    height: 1050px
+    height: 550px
   }
 }
 
 .resume-trigger {
   overflow: hidden;
   position: relative;
-  height: 700px;
+  height: 400px;
   margin: 0 auto 10px
 }
 
 @media screen and (min-width:450px) {
   .resume-trigger {
-    height: 1050px
+    height: 650px
   }
 }
 
 @media screen and (min-width:768px) {
   .resume-trigger {
-    height: 1150px
+    height: 750px
   }
 }
 
 @media screen and (min-width:992px) {
   .resume-trigger {
-    height: 1450px
+    height: 950px
   }
 }
 
