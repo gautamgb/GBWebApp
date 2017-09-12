@@ -230,6 +230,7 @@ webpackJsonp([0, 1], [function(e, t, n) {
         t.ajax({
           url: "/",
           type: "POST",
+          dataType: "json", // Add datatype
           data: e,
           success: function() {
             r.removeClass().addClass("fa fa-check"), o.text(" SENT!"), setTimeout(l, 3e3)

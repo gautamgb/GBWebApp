@@ -30,17 +30,17 @@
 }
 
 .resume-trigger {
-  height: 500px;
+  height: 900px;
   margin: 0 auto 10px;
 
   @include breakpoint($xsmall-breakpoint) {
-    height: 1050px;
+    height: 1350px;
   }
   @include breakpoint($small-breakpoint) {
-    height: 1150px;
+    height: 1450px;
   }
   @include breakpoint($medium-breakpoint) {
-    height: 1450px;
+    height: 1750px;
   }
 }
 

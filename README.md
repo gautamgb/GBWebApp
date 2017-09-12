@@ -1,5 +1,6 @@
 # Personal Website
-This is my personal expression of the professional me.
+Gautam Bharti 'GB'
+
 Thanks to Alec Ortega for the inspiration!
 
 

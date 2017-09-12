@@ -10052,25 +10052,25 @@ form textarea {
 .resume-trigger {
   overflow: hidden;
   position: relative;
-  height: 400px;
+  height: 700px;
   margin: 0 auto 10px
 }
 
 @media screen and (min-width:450px) {
   .resume-trigger {
-    height: 650px
+    height: 1050px
   }
 }
 
 @media screen and (min-width:768px) {
   .resume-trigger {
-    height: 750px
+    height: 1150px
   }
 }
 
 @media screen and (min-width:992px) {
   .resume-trigger {
-    height: 950px
+    height: 1450px
   }
 }
 
